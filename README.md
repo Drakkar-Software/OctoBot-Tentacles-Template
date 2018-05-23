@@ -56,4 +56,4 @@ It is also possible to specify which module(s) to install by naming it(them). In
 python start.py -p install forum_evaluator john_smith_macd_evaluator advanced_twitter_evaluator
 ```
 
-Do no hesitate to propose your new modules to the CryptoBot comunity !
+**Do not hesitate to propose your new modules to the CryptoBot comunity !**
