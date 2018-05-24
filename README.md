@@ -1,5 +1,5 @@
 # CryptoBot-Package-Template
-This repository contains the template for custom packages handled by CryptoBot's package manager.
+This repository contains the template for custom packages handled by [CryptoBot](https://github.com/Trading-Bot/CryptoBot)'s package manager.
 
 # How to use it ?
 
