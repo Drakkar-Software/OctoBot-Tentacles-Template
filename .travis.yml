@@ -5,7 +5,7 @@ python:
   - 3.5
 
 notifications:
-  slack: "cryptobotgroupe:vYDDCLRne52jPGVtN6cMiUkb"
+#  slack: "your slack here if you want slack notifications"
   email: false
 install:
   - git clone https://github.com/Drakkar-Software/OctoBot.git
