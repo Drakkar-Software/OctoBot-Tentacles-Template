@@ -1,4 +1,4 @@
-# OctoBot Tentacle Template ![Build Status](https://api.travis-ci.org/Drakkar-Software/OctoBot-Tentacles-Template.svg?branch=master)
+# OctoBot-Tentacles-Template [![Build Status](https://api.travis-ci.org/Drakkar-Software/OctoBot-Tentacles-Template.svg?branch=master)](https://travis-ci.org/Drakkar-Software/OctoBot-Tentacles-Template)
 This repository contains the template for custom tentacles (packages) handled by [OctoBot](https://github.com/Drakkar-Software/OctoBot)'s tentacle manager.
 
 # How to use it ?
