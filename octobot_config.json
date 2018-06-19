@@ -7,7 +7,7 @@
   "exchanges": {
   },
   "services": {},
-  "tentacles": [
+  "tentacles-packages": [
     "../"
   ],
   "notification":{
