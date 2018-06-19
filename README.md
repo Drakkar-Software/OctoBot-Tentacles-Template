@@ -1,14 +1,14 @@
 # OctoBot-Tentacles-Template [![Build Status](https://api.travis-ci.org/Drakkar-Software/OctoBot-Tentacles-Template.svg?branch=master)](https://travis-ci.org/Drakkar-Software/OctoBot-Tentacles-Template)
-This repository contains the template for custom tentacles (packages) handled by [OctoBot](https://github.com/Drakkar-Software/OctoBot)'s tentacle manager.
+This repository contains the template for custom tentacles packages handled by [OctoBot](https://github.com/Drakkar-Software/OctoBot)'s tentacle manager.
 
 # How to use it ?
 
-* Add any Evaluator, Strategy or Util function in the appropriate folder
+* Add any Evaluator, Strategy, Util function or trading mode in the appropriate folder
   * Evaluators can be using: 
     * Technical Analysis (TA folder)
     * Social analysis (Social folder) 
     * RealTime analysis (RealTime folder)
-* Add the following header on top of this newly create module:
+* Add the following header on top of the created tentacle:
 ```
 """
 OctoBot Tentacle
@@ -17,7 +17,9 @@ $tentacle_description: {
     "name": "module_name",
     "type": "module_type",
     "version": "module_version",
-    "requirements": []
+    "requirements": [],
+    "config_files": [],
+    "tests": []
 }
 """
 ```
@@ -28,16 +30,31 @@ OctoBot Tentacle
 
 $tentacle_description: {
     "name": "forum_evaluator",
-    "type": "Social",
+    "type": "Evaluator",
+    "subtype": "Social",
     "version": "1.0.0",
-    "requirements": []
+    "requirements": [],
+    "config_files": ["RedditForumEvaluator.json"]
 }
 """
 ```
-* Run generate.py : this will create a tentacles_list.json file using the module header. This file is used by OctoBot to handle the tentacle (package).
+Another example with tests included (available [here](https://github.com/Drakkar-Software/OctoBot-Tentacles/blob/master/Trading/Mode/daily_trading_mode.py)): 
+```
+OctoBot Tentacle
+
+$tentacle_description: {
+    "name": "daily_trading_mode",
+    "type": "Trading",
+    "subtype": "Mode",
+    "version": "1.0.0",
+    "requirements": [],
+    "tests":["test_daily_trading_mode_creator", "test_daily_trading_mode_decider"]
+}
+```
+* Run `generate.py` : this will create a **tentacles_list.json** file using the module header. This file is used by OctoBot to handle tentacles package.
 
 Your tentacle is now ready to be installed. 
-To install it, add the url to a GitHub repository containing the tentacle (or the local path to the tentacle) in **config/config.json** inside the **"tentacles"** part.
+To install it, add the url to a [GitHub](https://github.com/) repository containing the tentacle (or the local path to the tentacle) in **config.json** inside the **"tentacles"** part.
 
 Example:
 ```
