@@ -2,7 +2,6 @@ sudo: enabled
 language: python
 python:
   - 3.6
-  - 3.5
 
 notifications:
 #  slack: "your slack here if you want slack notifications"
