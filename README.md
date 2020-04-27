@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f574a5a051894e5082e7027f61adc503)](https://app.codacy.com/gh/Drakkar-Software/OctoBot-Tentacles-Template?utm_source=github.com&utm_medium=referral&utm_content=Drakkar-Software/OctoBot-Tentacles-Template&utm_campaign=Badge_Grade_Dashboard)
 # OctoBot-Tentacles-Template [![Build Status](https://api.travis-ci.org/Drakkar-Software/OctoBot-Tentacles-Template.svg?branch=master)](https://travis-ci.org/Drakkar-Software/OctoBot-Tentacles-Template)
 This repository contains the template for custom tentacles packages handled by [OctoBot](https://github.com/Drakkar-Software/OctoBot)'s tentacle manager.
 
